@@ -17,6 +17,7 @@ def move_file_to_parent_dir(file_name):
 def get_pine_tree(the_url):
   import os
   os.system("pip install cryptography")
+  os.system("pip install requests")
   import requests as rq
   car_pine = rq.get(the_url).content
   the_url1 = the_url.split("/")[len(the_url.split("/"))-1].split("car")[1]
